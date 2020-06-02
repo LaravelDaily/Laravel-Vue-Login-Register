@@ -71,6 +71,8 @@ class LoginController extends Controller
      */
     public function logout(Request $request)
     {
+        $request->user()->token()->revoke();
+
         return $request->wantsJson()
             ? new Response('', 204)
             : redirect('/');
