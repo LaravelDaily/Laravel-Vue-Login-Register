@@ -11,6 +11,7 @@ __Back-end__
 - Run __php artisan key:generate__
 - Run __php artisan migrate --seed__ (it has some seeded data for your testing)
 - Run __php artisan passport:install__
+- Run __php -S 0.0.0.0:8082 public/index.php__
 
 
 __Front-end__
